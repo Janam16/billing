@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/billStyle.css" />
+    <title>Bill</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sheet">
+        <div class="typeBill">
+          <b><h9>TAX INVOICE/CREDIT BILL</h9></b>
+        </div>
+        <div class="head">
+          <img src="/myProLogo.png" id="imgLogo" alt="logo" />
+          <span class="title">
+            <h1>PUJA ELECTRICALS</h1>
+            <h4>(Industrial & Domestic Material Suppliers)</h4>
+          </span>
+        </div>
+        <div class="address">
+          <b
+            >#4, Amman Complex, No3. Ranganathan Nagar,Agaram Main Road,<br />
+            East Tambaram,Selaiyur, Chennai-800 073. <br />
+            Phone: 9787419494 EMail:puja_prince@yahoo.com<br />
+            GSTIN No. 33AEJPU3179H1Z5<br />
+            LUT ARN NO.& DATE: AD3303230633356B(23/3/2023)<br
+          /></b>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid1">
+            <b>Bill No</b>&nbsp<input
+              type="text"
+              name="billNum"
+              id="billNum"
+              maxlength="10"
+            />
+          </div>
+          <div class="grid2">
+            <b>Date</b>&nbsp<input type="date" id="date" name="date" />
+          </div>
+          <div class="grid1">
+            <b>Party GSTIN</b>&nbsp<input
+              type="text"
+              name="gstin"
+              id="gstin"
+              maxlength="15"
+            />
+          </div>
+          <div class="grid2">
+            <b>PO No.</b>&nbsp<input
+              type="text"
+              name="poNum"
+              id="poNum"
+              maxlength="15"
+            />
+          </div>
+        </div>
+        <div class="toDiv">
+          <b>To:</b>
+          <textarea name="toAddress" id="toAddress" rows="2"></textarea>
+          <!-- <input type="text" name="toAddress" id="toAddress" /> -->
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th class="item-number">SNo.</th>
+                <th class="hsnCode">HSN Code</th>
+                <th class="item">Particulars</th>
+                <th class="quantity">Quantity</th>
+                <th class="rate">Rate</th>
+                <th class="total">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr>
+              <!-- <tr>
+                <td>
+                  <input
+                    type="number"
+                    name="serailNum"
+                    maxlength="2"
+                    class="item-number1"
+                  />
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="hsnCode"
+                    class="hsnCode1"
+                    maxlength="8"
+                  />
+                </td>
+                <td><input type="text" name="item" class="item1" /></td>
+                <td>
+                  <input type="number" name="quantity" class="quantity1" />
+                </td>
+                <td><input type="number" name="rate" class="rate1" /></td>
+                <td>
+                  <input type="number" name="total" class="total1" readonly />
+                </td>
+              </tr> -->
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2"><b>Total:</b></td>
+                <td class="grand-total"></td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <b>Rupees In Words:</b><span class="totalInWords"></span>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="8">
+                  <span class="byName"><b>For PUJA Electricals</b></span>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script>
+      let num, amount, result;
+      const rows = document.querySelectorAll(".table-container tbody tr");
+
+      rows.forEach((row) => {
+        const quantityInput = row.querySelector(".quantity1");
+        const rateInput = row.querySelector(".rate1");
+        const totalInput = row.querySelector(".total1");
+
+        quantityInput.addEventListener("input", updateTotal);
+        rateInput.addEventListener("input", updateTotal);
+
+        function updateTotal() {
+          const quantity = parseFloat(quantityInput.value) || 0;
+          const rate = parseFloat(rateInput.value) || 0;
+          const total = quantity * rate;
+          totalInput.value = total.toFixed(2);
+          updateGrandTotal();
+          convertDecimalToPaisa(num);
+        }
+      });
+
+      function updateGrandTotal() {
+        const totalInputs = document.querySelectorAll(".total1");
+        let grandTotal = 0;
+
+        totalInputs.forEach((input) => {
+          grandTotal += parseFloat(input.value) || 0;
+        });
+
+        const grandTotalElement = document.querySelector(".grand-total");
+        grandTotalElement.textContent = grandTotal.toFixed(2);
+        num = grandTotal.toFixed(2);
+      }
+
+      function convertNumberToWords(num) {
+        const ones = [
+          "",
+          "One",
+          "Two",
+          "Three",
+          "Four",
+          "Five",
+          "Six",
+          "Seven",
+          "Eight",
+          "Nine",
+        ];
+        const tens = [
+          "",
+          "Ten",
+          "Twenty",
+          "Thirty",
+          "Forty",
+          "Fifty",
+          "Sixty",
+          "Seventy",
+          "Eighty",
+          "Ninety",
+        ];
+        const teens = [
+          "",
+          "Eleven",
+          "Twelve",
+          "Thirteen",
+          "Fourteen",
+          "Fifteen",
+          "Sixteen",
+          "Seventeen",
+          "Eighteen",
+          "Nineteen",
+        ];
+        let words = "";
+
+        if (num === 0) {
+          return "zero";
+        }
+
+        if (num < 0) {
+          words += "minus ";
+          num = Math.abs(num);
+        }
+
+        if (num >= 100000) {
+          words += convertNumberToWords(Math.floor(num / 100000)) + " Lakh ";
+          num %= 100000;
+        }
+
+        if (num >= 1000) {
+          words += convertNumberToWords(Math.floor(num / 1000)) + " Thousand ";
+          num %= 1000;
+        }
+
+        if (num >= 100) {
+          if (num % 100 > 0) {
+            words += ones[Math.floor(num / 100)] + " Hundred and ";
+          } else {
+            words += ones[Math.floor(num / 100)] + " Hundred";
+          }
+          num %= 100;
+        }
+
+        if (num >= 11 && num <= 19) {
+          words += teens[num - 10] + " ";
+          num = 0;
+        }
+
+        if (num >= 10) {
+          words += tens[Math.floor(num / 10)] + " ";
+          num %= 10;
+        }
+
+        if (num > 0) {
+          words += ones[num] + " ";
+        }
+        amount = words.trim();
+        return words.trim();
+      }
+
+      function convertDecimalToPaisa(decimal) {
+        const parts = decimal.toString().split(".");
+        const rupees = convertNumberToWords(Number(parts[0]));
+        const paisa = convertNumberToWords(Number(parts[1])) + " Paisa Only.";
+        let rupeesInWords;
+        if (Number(parts[1]) === 0) {
+          rupeesInWords = ` ${amount} Rupees Only.`;
+        } else {
+          rupeesInWords = ` ${rupees} Rupees ${paisa}`;
+        }
+
+        let result =
+          rupeesInWords.slice(0, 2).toUpperCase() + rupeesInWords.slice(2);
+        document.querySelector(".totalInWords").textContent = result;
+        return result;
+      }
+    </script>
+  </body>
+</html>

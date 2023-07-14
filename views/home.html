@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>PUJA Login Page</title>
+    <script src="val.js"></script>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <div class="wrapper">
+        <div class="label">
+          <img src="/myProLogo.png" id="imgLogo" alt="logo" />
+          <span class="logoName"><h1>PUJA &nbsp ELECTRICALS</h1></span>
+        </div>
+        <div class="login">
+          <span class="heading"><h1>Login</h1></span>
+          <form action="/store-menu" method="POST">
+            <div class="loginInput">
+              <label>User Name </label
+              ><input type="text" name="userName" id="userName" />
+              <label>Password </label>
+              <input type="password" name="password" id="pwd" />
+            </div>
+            <div class="btn">
+              <button name="submit" class="btn">Submit</button>
+            </div>
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function validate() {
+        const userName = document.getElementById("userName").value;
+        const pwd = document.getElementById("pwd").value;
+        const permUserName = "Prince";
+        const permPassword = "June@2023";
+        if (userName == permUserName && pwd == permPassword) {
+          console.log("Success");
+        } else {
+          document.getElementById("result").innerHTML = "Invalid Password!";
+        }
+      }
+    </script>
+  </body>
+</html>

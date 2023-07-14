@@ -1,0 +1,163 @@
+.sheet {
+    width: 21cm;
+    height: 29.7cm;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0.2cm;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+
+  body{
+    margin: 0px;  
+    font-size: 18px;  
+  }
+
+  .wrapper {
+    background-image: url("/redbuild.jpg");
+    background-size: cover;
+  }
+
+  .head {
+    display: flex;
+    padding-left: 7em;
+  }
+
+  .title {
+    line-height: 5px;
+    padding-left: 10px;
+    text-align: center;
+  }
+
+  .title h1 {
+    color: green;
+  }
+
+  .title h4 {
+    color: red;
+  }
+
+  .typeBill,
+  .address {
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 5px;
+    padding-top: 10px;
+    justify-content: space-between;
+  }
+
+  #poNum,
+  #gstin,
+  #date,
+  #billNum {
+    width: 170px;
+  }
+
+  /* input:hover {
+    border: 1px solid black;
+    border-radius: 4px;
+  } */
+
+  textarea,input {
+    width: 90%;
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  input[name="item"]{
+    width: 99%;
+    font-weight: 600;
+  }
+  input[name="total"]{
+    width: 97%;
+    text-align: center;
+  }
+
+  input[name="serailNum"],input[name="quantity"],input[name="rate"]{
+    text-align: center;
+  }
+  
+
+  #date {
+    font-size: 18px;
+  }
+
+  #toAddress {
+    width: 100%;
+  }
+
+  .toDiv {
+    padding: 5px 0px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table,
+  td,
+  th {
+    border: 1px solid;
+  }
+
+  /* .item-number,
+  .quantity {
+    width: 5%;
+  }
+
+  .hsnCode {
+    width: 15%;
+  }
+
+  .item {
+    width: 40%;
+  }
+
+  .rate,
+  .total {
+    width: 20%;
+  } */
+
+  .item-number {
+    width: 5.5%;
+  }
+  .quantity{
+    width: 10%;
+    text-align: center;
+  }
+  .hsnCode,
+  .rate {
+    width: 12%;
+    text-align: center;
+  }
+  .total{
+    width: 13.5%;
+    text-align: center;
+  }
+
+  tfoot{
+    height: 90px;
+  }
+
+  .byName{
+    padding-top: 80px;
+    padding-right: 10px;
+    float: right;
+  }
+
+  /* .item1{
+    font-weight: 500;
+  } */
+
+  .grand-total{
+    font-weight: bold;
+    text-align: center;
+  }
+
+ 
