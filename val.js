@@ -92,8 +92,12 @@ app.get("/dc", (req, res) => {
   res.sendFile(path.join(__dirname, "./", "views", "dc.html"));
 });
 
-app.get("/testq", (req, res) => {
-  res.sendFile(path.join(__dirname, "./", "views", "testq.html"));
+app.get("/gstQuotation", (req, res) => {
+  res.sendFile(path.join(__dirname, "./", "views", "gstQuotation.html"));
+});
+
+app.get("/gstBill", (req, res) => {
+  res.sendFile(path.join(__dirname, "./", "views", "gstBill.html"));
 });
 
 //logout
